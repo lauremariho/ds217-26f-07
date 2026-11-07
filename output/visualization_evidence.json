@@ -1,0 +1,40 @@
+{
+  "critique": [
+    {
+      "category": "unsupported claim",
+      "problem": "This claim is not supported by the data.",
+      "repair": "Add supporting evidence or remove the claim."
+    },
+    {
+      "category": "truncated baseline",
+      "problem": "The baseline is incomplete.",
+      "repair": "Include all relevant baseline data."
+    },
+    {
+      "category": "missing unit",
+      "problem": "The units are missing.",
+      "repair": "Add appropriate units to all measurements."
+    },
+    {
+      "category": "color-only encoding",
+      "problem": "The visualization uses only color to encode information.",
+      "repair": "Use additional visual elements like shape or size to encode information."
+    },
+    {
+      "category": "distracting decoration",
+      "problem": "The visualization has unnecessary decorative elements.",
+      "repair": "Remove or minimize decorative elements that do not add value."
+    }
+  ],
+  "question": "How does the percentage of patients meeting the weekly exercise goal change across follow-up visits for the Home-based and Center-based programs?",
+  "audience": "The cardiac rehabilitation program coordinator, who will use the chart to identify where additional follow-up support may be needed.",
+  "intended_claim": "The percentage meeting the exercise goal increased across visits in both programs, with Center-based patients having a higher percentage than Home-based patients at visit 4.",
+  "y_measure": "Percentage of patients seen at each follow-up visit who met the weekly exercise goal of 150 minutes (%)",
+  "grain": "One row and one plotted point represent one rehabilitation program at one follow-up visit.",
+  "data_types": {
+    "program": "categorical",
+    "visit_number": "ordinal",
+    "goal_met_pct": "quantitative"
+  },
+  "text_alternative": "The chart is a line graph that depicts the relationship between follow-up visits and patients meeting the exercise goal.The x-axis repsents follow-up visits from 1 to 4 the y-axis represents patients meeting the exercise goal in percentage. The Home-based program is represented by an orange dashed line with square markers, while the Center-based program is represented by a blue solid line with circular markers. Both programs show an increase in goal attainment from visit 1 to visit 4, with the Home-based program rising from approximately 55% to 70%, and the Center-based program rising from approximately 50% to 75%. At visit 4, there is a 9 percentage-point gap between the two programs. A limitation of this data is that patients chose their program, so the gap does not indicate causation, and each percentage only reflects the patients seen at that visit, which could be influenced by chance or who returned for follow-up."
+}
